@@ -1,0 +1,10 @@
+.textoTitulo {
+    font-size: 30px;
+}
+
+/* Configuración para el responsive movil */
+@media screen and (max-width: 800px){
+    .textoTitulo {
+        font-size: 10px;
+    }
+}
