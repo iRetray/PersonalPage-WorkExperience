@@ -1,15 +1,5 @@
-.textoTitulo {
-    font-size: 30px;
-}
 
-/* Configuración para el responsive movil */
-@media screen and (max-width: 800px){
-    .textoTitulo {
-        font-size: 10px;
-    }
-}
-
-/* Cabecera dinámica */
+/* Cabecera dinámica modo grande*/
 header {
     width:100%;
     height:200px;
@@ -31,6 +21,7 @@ header .colorBlanco {
     transition-duration: 2s;
 }
  
+/* Cabecera dinámica modo pequeño*/
 .headerReducido {
 	position: fixed;
     height:100px;
@@ -43,8 +34,28 @@ header .colorBlanco {
     transition-duration: 2s;
 }
 
-.bodyFixed {
-    margin-top: 100px;
+/* Estilos */
+.zonaGit {
+    background-color: #4e4f4d;
+    padding: 15px;
 }
 
+.octocat {
+    width: 300px;
+}
+
+.profile {
+    width: 500px;
+}
+
+.paddingTexto {
+    padding: 10px;
+}
+
+/* Configuración para el responsive movil */
+@media screen and (max-width: 800px){
+    .textoTitulo {
+        font-size: 10px;
+    }
+}
 
