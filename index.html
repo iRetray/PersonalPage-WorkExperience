@@ -2,21 +2,46 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilosPropios.css">
+    <link rel="stylesheet" href="css/styleCustom.css">
+    <script type="text/javascript" src="js/scriptsCustom.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Retray</title>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('header').addClass('headerReducido');
+                } else {
+                    $('header').removeClass('headerReducido');
+                }
+            });
+        });
+    </script>
 </head>
+<header class="header">
+        <div class="display-1 colorBlanco">Retray</div>
+</header>
 <body>
-    <p class="textoTitulo">Texto de prueba</p>
-    <h2>Lista de herramientas</h2>
-    <h1>Entorno Web</h1>
-    <p>Bootstrap</p>
-    <h1>Bases de datos</h1>
-    <p>XAMPP, WAAMPP para 127.0.0.1, MySQL, Oracle Database, MongoDB</p>
-    <h2>Programación</h2>
-    <p>C++, C#, Java, Kotlin, MatLAB</p>
+    <div class="titulo">
+        <p class="display-1">Julian Camilo</p>
+        <p class="textoTitulo">Texto de prueba</p>
+        <h2>Lista de herramientas</h2>
+        <h1>Entorno Web</h1>
+        <p>Bootstrap</p>
+        <h1>Bases de datos</h1>
+        <p>XAMPP, WAAMPP para 127.0.0.1, MySQL, Oracle Database, MongoDB</p>
+        <h2>Programación</h2>
+        <p>C++, C#, Java, Kotlin, MatLAB</p>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vitae dignissimos sint cupiditate placeat id ut officia culpa a similique. Suscipit veniam vero aut nisi itaque laboriosam praesentium ullam! Debitis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vitae dignissimos sint cupiditate placeat id ut officia culpa a similique. Suscipit veniam vero aut nisi itaque laboriosam praesentium ullam! Debitis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vitae dignissimos sint cupiditate placeat id ut officia culpa a similique. Suscipit veniam vero aut nisi itaque laboriosam praesentium ullam! Debitis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vitae dignissimos sint cupiditate placeat id ut officia culpa a similique. Suscipit veniam vero aut nisi itaque laboriosam praesentium ullam! Debitis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vitae dignissimos sint cupiditate placeat id ut officia culpa a similique. Suscipit veniam vero aut nisi itaque laboriosam praesentium ullam! Debitis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto vitae dignissimos sint cupiditate placeat id ut officia culpa a similique. Suscipit veniam vero aut nisi itaque laboriosam praesentium ullam! Debitis.</h1>
+    </div>
 </body>
 </html>
