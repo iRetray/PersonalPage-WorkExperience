@@ -12,27 +12,6 @@ header {
 .titulo {
     margin-top: 0px;
 }
- 
-header .colorBlanco {
-	color:#f2f2f2;
-	font-size:50px;
-	line-height:200px;
-    float:left;
-    transition-duration: 2s;
-}
- 
-/* Cabecera dinámica modo pequeño*/
-.headerReducido {
-	position: fixed;
-    height:100px;
-    transition-duration: 2s;
-}
- 
-.headerReducido .colorBlanco {
-	line-height:100px;
-    font-size:30px;
-    transition-duration: 2s;
-}
 
 /* Estilos */
 .zonaGit {
@@ -50,6 +29,10 @@ header .colorBlanco {
 
 .paddingTexto {
     padding: 10px;
+}
+
+.inverso .p{
+    color: #f2f2f2;
 }
 
 /* Configuración para el responsive movil */
