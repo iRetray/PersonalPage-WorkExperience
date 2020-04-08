@@ -7,20 +7,10 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Retray</title>
-    <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if( $(this).scrollTop() > 0 ){
-                    $('header').addClass('headerReducido');
-                } else {
-                    $('header').removeClass('headerReducido');
-                }
-            });
-        });
-    </script>
     <nav class="navbar sticky-top navbar-dark bg-dark">
         <a class="navbar-brand inverso" href="#">
             <img src="img/nickStyle.png" width="30" height="30" class="d-inline-block align-top rounded" alt=""> Retray
@@ -28,8 +18,9 @@
     </nav>
 </head>
 <body>
-    <div class="titulo">
-        <div class="row">
+    <!--Zona del header-->
+    <div>
+        <div class="row titulo">
             <div class="col-sm">
                 <center><img src="img/profilePhoto.png" class="img-fluid mx-auto d-block profile"></center>
             </div>
@@ -38,6 +29,12 @@
                 <center><p class="h2 text-light">Visita mi perfil en GitHub</p></center>
                 <center><a class="btn btn-primary btn-lg" href="https://github.com/iretray" role="button">Retray en GitHub</a></center>
             </div>
+        </div>
+    </div>
+    <!--Zona del header-->
+    <div>
+        <div class="col-sm">
+            <p>Hola, texto de prueba</p>
         </div>
     </div>
 </body>
