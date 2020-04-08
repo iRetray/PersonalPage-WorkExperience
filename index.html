@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="css/animate.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        function mostrarOcultar(id){
+var elemento = document.getElementById(id);
+if(!elemento) {
+return true;
+}
+if (elemento.style.display == "none") {
+elemento.style.display = "block"
+} else {
+elemento.style.display = "none"
+};
+return true;
+};
+    </script>
     <title>Retray</title>
     <nav class="navbar sticky-top navbar-dark bg-dark">
         <a class="navbar-brand inverso" href="#">
@@ -20,14 +34,32 @@
 <body>
     <!--Zona del header-->
     <div>
-        <div class="row titulo">
-            <div class="col-sm">
+        <div class="general">
+            <div class="foto">
                 <center><img src="img/profilePhoto.png" class="img-fluid mx-auto d-block profile"></center>
             </div>
-            <div class="col-sm zonaGit">
+            <div class="github">
                 <img src="img/octocat.png" class="img-fluid mx-auto d-block octocat">
                 <center><p class="h2 text-light">Visita mi perfil en GitHub</p></center>
+                <center><p class="lead text-light">Para ver todos mis proyectos, terminados y en progreso</p></center>
                 <center><a class="btn btn-primary btn-lg" href="https://github.com/iretray" role="button">Retray en GitHub</a></center>
+                   
+            </div>
+            <div class="codigo">
+                <center><p class="display-4">¡Con los <b>lenguajes de programación, APIs y herramientas web</b> podemos hacer cosas increibles!</p></center>
+                <br>
+                <div class="cajonGris">
+                <center><p class="h2 text-light">¿Quieres ver un ejemplo?</p></center>
+                <center><p class="lead text-light">Hablaremos de integraciones en HTML con otras aplicaciones, además del uso de un lenguaje de programación orientado a objetos para crear un sencillo sistema de facturación de productos.</p></center>
+                <br>
+                <center>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button onclick="return mostrarOcultar('ocultable')" class="btn btn-success btn-lg">¡Claro!</button>
+                    <button onclick="return mostrarOcultar('ocultable')" class="btn btn-danger btn-lg">No por ahora</button>
+                      </div>
+                      <div id="ocultable"><script src="https://gist.github.com/iRetray/68de7207bb2533bd3741e6ff565723f0.js"></script></div>
+                </center>
+                </div>
             </div>
         </div>
     </div>

@@ -9,25 +9,20 @@ header {
     transition-duration: 2s;
 }
  
-.titulo {
+.centradoOpcion2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.centradoTabla {
+    vertical-align: center;
+}
+
 /* Estilos */
 .zonaGit {
     background-color: #4e4f4d;
-    padding: 15px;
-}
-
-.centradoVertical {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    padding: 30px;
 }
 
 .octocat {
@@ -42,14 +37,54 @@ header {
     padding: 10px;
 }
 
-.inverso .p{
-    color: #f2f2f2;
+.cajonGris {
+    background-color: #536872;
+    padding: 30px;
+    border-radius: 30px;
 }
+
+/* Maquetado */
+.general {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "foto github"
+        "codigo codigo"
+        "imagen loginUsuario"
+        "redes  loginUsuario";
+}
+.general .foto {
+    grid-area: foto;
+    background-color: black;
+}
+.general .github {
+    grid-area: github;
+    background-color: #4e4f4d;
+    padding: 30px;
+}
+.general .codigo {
+    grid-area: codigo;
+    padding: 30px;
+}
+.general .redes {
+    grid-area: redes;
+}
+
+
 
 /* Configuración para el responsive movil */
 @media screen and (max-width: 800px){
-    .textoTitulo {
-        font-size: 10px;
+    .general {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "foto foto"
+            "github github"
+            "codigo codigo"
+            "imagen loginUsuario"
+            "redes  loginUsuario";
     }
 }
 
